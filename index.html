@@ -1,95 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width" />
-
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="main.css">
-    <title>My Portfolio</title>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
   </head>
-
   <body>
+    <div id="container">
+      <nav class="navbar">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <div id="app">
+        <div class="overview">
+          <div class="title">
+            <h1>Ayoub Abed<span>&nbsp;</span></h1>
+          </div>
+          <div class="description">
+            <p>I am a Front-End Engineer in the Bay Area. The goal for all my projects is to produce simple, beautiful user experiences. In my prior life, I worked as a Product Manager at iSmartAlarm. Follow my progress by exploring my recent projects below.</p>
+          </div>
+        </div>
+        <div class="about-me">
+          <div class="terminal">
+            <div class="terminal-header">
+              <div class="red-btn"></div>
+              <div class="yellow-btn"></div>
+              <div class="green-btn"></div>
+            </div>
+            <div id="terminal-window" class="terminal-window">
+              <!-- This gets filled with javascript -->
+            </div>
+          </div>
+        </div>
+        <h2 id="projects" class="section-title">Projects</h2>
+        <div class="projects-container">
+          <div class="project-card">
+            <div class="project-screenshot" style="background: url('./first.PNG') 0% 0% / cover no-repeat;"></div>
+            <div class="project-background"></div>
+            <div class="project-content">
+              <h3>Expensify App</h3>
+              <p>Applied techniques learned from <a href="https://www.udemy.com/react-2nd-edition/">Andrew Mead's React course.</a> understanding the concept of React and Redux and applying the skills i learnt helped me build much better foundation in React,Redux & JSX. </p>
+              <div class="project-skills">
+                <span class="project-skill">HTML5</span>
+                <span class="project-skill">CSS3</span>
+                <span class="project-skill">Sass</span>
+                <span class="project-skill">Javascript</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/Skobraf/React-Redux-Expensify-app" class="project-link">View code</a>
+                <a href="http://expensify.mead.io/" class="project-link">Expolore demo</a>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+        <h2 id="contact" class="section-title">Contact me!</h2>
+        <div class="contact-links">
+          <span> <a href="mailto:skobraf@gmail.com">Send me Email</a></span>
+          <span> <a href="https://www.linkedin.com/in/ayoub-abed/">Linkedin</a></span>
+          <span> <a href="https://github.com/Skobraf">Github</a></span>
+        </div>
+        <footer><span>Thank you so much for your visit!</span></footer>
+      </div>
 
-
-
-<nav class="navbar navbar-inverse navbar-static-top">
-			<div class="container">
-         <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
     </div>
-</div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <nav>
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-				<ul class="nav navbar-nav">
-					<li><a href="index.html">JESUS ALVAREZ</a></li>
-				</ul>
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#aboutme">ABOUT ME</a></li>
-        <li><a href="#projects">PROJECTS</a></li>
-        <li><a href="#contact">CONTACT</a></li>
-      </ul>
-			</div>
-		</nav>
-
-
-    <div class="Personal-info">
-    	<span class="profile-pic">
-    		<img src="./images/profile.jpeg" alt="profile">
-    	</span>
-	    <div class="name">
-	    	<h1>JESUS ALVAREZ</h1>
-	    </div>
-	    <h2>Full Stack Developer</h2>
-	    <div class="social">
-	    	<ul>
-		      <li><a href="#" target="_blank"><span><img src="./images/email-icon.png" alt=""></span>  Email</a></li>
-		      <li><a href="#" target="_blank"><span><img src="./images/linkedin-icon.png" alt=""></span>  LinkedIn</a></li>
-		      <li><a href="#" target="_blank"><span><img src="./images/github-icon.png" alt=""></span>  Github</a></li>
-		    </ul>
-	    </div>
-    </div>
-
-    <div class="About-me">
-      <a id="aboutme">
-      	<h1>About me</h1>
-      </a>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-    </div>
-    <div class="About-me">
-
-      <a id="projects">
-      	<h1>Projects</h1>
-      </a>
-      <ul>
-        <li><a href="https://github.com/GStreamer/gstreamer" target="_blank">Project 1: This is GStreamer, a framework for streaming media.</a></li>
-        <li><a href="https://github.com/Skobraf/React-Redux-Expensify-app" target="_blank">Project 2: React and Redux Expensify app from Udemy course</a></li>
-        <li><a href="https://github.com/Skobraf/ProteinTracker-ChromeExtension" target="_blank">Project 3: a Sample chrome extension to calculate the protein in the day</a></li>
-      </ul>
-    </div>
-
-    <footer>
-      <ul>
-        <li class="float-left"><span>Made with &hearts; by Jesus</span><a id="contact"></a></li>
-        <li><a href="#" target="_blank"><img src="./images/email-icon.png" alt=""></a></li>
-        <li><a href="#" target="_blank"><img src="./images/linkedin-icon.png" alt=""></a></li>
-        <li><a href="#" target="_blank"><img src="./images/github-icon.png" alt=""></a></li>
-      </ul>
-    </footer>
+    <script src="script.js"></script>
   </body>
-
-
 </html>
